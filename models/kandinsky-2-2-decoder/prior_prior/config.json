@@ -1,0 +1,20 @@
+{
+  "_class_name": "PriorTransformer",
+  "_diffusers_version": "0.24.0",
+  "_name_or_path": "C:\\Users\\edesa\\.cache\\huggingface\\hub\\models--kandinsky-community--kandinsky-2-2-prior\\snapshots\\9fc51ad5732afc5d031724219d22e6c42179c5a8\\prior",
+  "added_emb_type": "prd",
+  "additional_embeddings": 4,
+  "attention_head_dim": 64,
+  "clip_embed_dim": null,
+  "dropout": 0.0,
+  "embedding_dim": 1280,
+  "embedding_proj_dim": null,
+  "embedding_proj_norm_type": null,
+  "encoder_hid_proj_type": "linear",
+  "norm_in_type": null,
+  "num_attention_heads": 32,
+  "num_embeddings": 77,
+  "num_layers": 20,
+  "time_embed_act_fn": "silu",
+  "time_embed_dim": null
+}

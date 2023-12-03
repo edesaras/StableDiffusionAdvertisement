@@ -1,0 +1,41 @@
+{
+  "_class_name": "KandinskyV22Img2ImgCombinedPipeline",
+  "_diffusers_version": "0.24.0",
+  "_name_or_path": "kandinsky-community/kandinsky-2-2-decoder",
+  "movq": [
+    "diffusers",
+    "VQModel"
+  ],
+  "prior_image_encoder": [
+    "transformers",
+    "CLIPVisionModelWithProjection"
+  ],
+  "prior_image_processor": [
+    "transformers",
+    "CLIPImageProcessor"
+  ],
+  "prior_prior": [
+    "diffusers",
+    "PriorTransformer"
+  ],
+  "prior_scheduler": [
+    "diffusers",
+    "UnCLIPScheduler"
+  ],
+  "prior_text_encoder": [
+    "transformers",
+    "CLIPTextModelWithProjection"
+  ],
+  "prior_tokenizer": [
+    "transformers",
+    "CLIPTokenizer"
+  ],
+  "scheduler": [
+    "diffusers",
+    "DDPMScheduler"
+  ],
+  "unet": [
+    "diffusers",
+    "UNet2DConditionModel"
+  ]
+}
