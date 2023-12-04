@@ -175,11 +175,11 @@ iface = gr.Interface(
     concurrency_limit=2,
     examples=[
         [
-            "/path/to/example_initial_image1.jpg",  # Initial Image
-            "/path/to/example_logo1.png",  # Logo
-            "A scenic mountain landscape",  # Prompt
-            "Discover More",  # Button Text
-            "Escape into Nature",  # Punchline
+            "./assets/city_image.jpg",  # Initial Image
+            "./assets/logo.png",  # Logo
+            "Big bank building finance",  # Prompt
+            "Discover More!",  # Button Text
+            "We Maximize Risk-Adusted Returns for Our Customers",  # Punchline
             "#00FF00",  # Image Color
             "#0000FF",  # Theme Color
         ]
