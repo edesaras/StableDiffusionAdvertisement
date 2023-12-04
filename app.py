@@ -13,13 +13,13 @@ print(f"CUDA device: {torch.cuda.get_device_name(torch.cuda.current_device())}")
 
 
 def image_to_template(generated_image, logo, button_text, punchline, theme_color):
-    template_width = 1080
-    button_font_size = 20
-    punchline_font_size = 60
-    decoration_height = 20
-    margin = 40
+    template_width = 540
+    button_font_size = 10
+    punchline_font_size = 30
+    decoration_height = 10
+    margin = 20
     # wrap punchline text
-    punchline = textwrap.wrap(punchline, width=35)
+    punchline = textwrap.wrap(punchline, width=30)
     n_of_lines_punchline = len(punchline)
 
     generated_image = generated_image.convert("RGBA")
