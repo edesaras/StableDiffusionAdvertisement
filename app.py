@@ -75,8 +75,8 @@ def image_to_template(generated_image, logo, button_text, punchline, theme_color
     ]
 
     # Generate Components
-    generated_image.thumbnail(image_shape, Image.ANTIALIAS)
-    logo.thumbnail(logo_shape, Image.ANTIALIAS)
+    generated_image.thumbnail(image_shape, Image.LANCZOS)
+    logo.thumbnail(logo_shape, Image.LANCZOS)
     background = Image.new("RGBA", (template_width, template_height), "WHITE")
     # round the corners of generated image
     mask = Image.new("L", generated_image.size, 0)
