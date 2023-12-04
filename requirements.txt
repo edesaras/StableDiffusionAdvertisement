@@ -3,6 +3,6 @@ transformers
 --extra-index-url https://download.pytorch.org/whl/cu113
 torch
 gradio
-PIL
+pillow
 requests
 safetensors
