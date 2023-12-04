@@ -36,8 +36,8 @@ def image_to_template(generated_image, logo, button_text, punchline, theme_color
     logo_shape = (logo_width, logo_height)
 
     # Define fonts
-    button_font = ImageFont.truetype("Montserrat-Bold.ttf", button_font_size)
-    punchline_font = ImageFont.truetype("Montserrat-Bold.ttf", punchline_font_size)
+    button_font = ImageFont.truetype("./assets/Montserrat-Bold.ttf", button_font_size)
+    punchline_font = ImageFont.truetype("./assets/Montserrat-Bold.ttf", punchline_font_size)
 
     # button shape
     button_width = template_width // 3
