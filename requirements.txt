@@ -3,7 +3,7 @@ transformers
 --extra-index-url https://download.pytorch.org/whl/cu113
 torch
 gradio
-pillow
+pillow==9.4.0
 requests
 safetensors
 accelerate

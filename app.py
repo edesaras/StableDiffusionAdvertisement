@@ -75,8 +75,8 @@ def image_to_template(generated_image, logo, button_text, punchline, theme_color
     ]
 
     # Generate Components
-    generated_image.thumbnail(image_shape, Image.LANCZOS)
-    logo.thumbnail(logo_shape, Image.LANCZOS)
+    generated_image.thumbnail(image_shape, Image.ANTIALIAS)
+    logo.thumbnail(logo_shape, Image.ANTIALIAS)
     background = Image.new("RGBA", (template_width, template_height), "WHITE")
     # round the corners of generated image
     mask = Image.new("L", generated_image.size, 0)
@@ -94,7 +94,7 @@ def image_to_template(generated_image, logo, button_text, punchline, theme_color
     # Punchline text
     text_heights = []
     for line in punchline:
-        text_width, text_height = draw.textlength(line, font=punchline_font)
+        text_width, text_height = draw.textsize(line, font=punchline_font)
         punchline_pos = (
             (template_width - text_width) // 2,
             image_pos[1] + generated_image.height + margin + sum(text_heights),
@@ -103,7 +103,7 @@ def image_to_template(generated_image, logo, button_text, punchline, theme_color
         text_heights.append(text_height)
 
     # Button with rounded corners
-    button_text_width, button_text_height = draw.textlength(button_text, font=button_font)
+    button_text_width, button_text_height = draw.textsize(button_text, font=button_font)
     button_shape = [
         ((template_width - button_width) // 2, punchline_pos[1] + text_height + margin),
         (
