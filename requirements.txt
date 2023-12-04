@@ -6,3 +6,4 @@ gradio
 pillow
 requests
 safetensors
+accelerate
